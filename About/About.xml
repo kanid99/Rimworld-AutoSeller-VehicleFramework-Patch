@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Auto Caravan Equip - Vehicle Framework Compatibility</name>
+  <packageId>kanid99.AutoCaravanEquip.VehicleFrameworkCompat</packageId>
+  <author>kanid99</author>
+  <url>https://github.com/kanid99/Rimworld-AutoSeller-VehicleFramework-Patch</url>
+  <modVersion>0.9.6</modVersion>
+  <supportedVersions>
+    <li>1.6</li>
+  </supportedVersions>
+  <description>Build 0.9.6
+
+Restores Auto Caravan Equip (Auto Seller extension) when forming caravans with Vehicle Framework installed.
+
+Vehicle Framework opens the Form Caravan dialog without first going through route planning. Auto Caravan Equip applies its presets and rules when route planning finishes, so with Vehicle Framework they never ran and you got the plain vanilla dialog. This patch runs Auto Caravan Equip's logic when the dialog opens instead, and applies its days-of-travel rules the first time a route is chosen.
+
+Load after Vehicle Framework and Auto Caravan Equip.</description>
+  <modDependencies>
+    <li>
+      <packageId>brrainz.harmony</packageId>
+      <displayName>Harmony</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+    </li>
+    <li>
+      <packageId>SmashPhil.VehicleFramework</packageId>
+      <displayName>Vehicle Framework</displayName>
+    </li>
+    <li>
+      <packageId>Supes.AutoSeller.CaravanEquip</packageId>
+      <displayName>Auto Caravan Equip (Autoseller Extension)</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/1487284611</steamWorkshopUrl>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>brrainz.harmony</li>
+    <li>SmashPhil.VehicleFramework</li>
+    <li>Supes.AutoSeller.Core</li>
+    <li>Supes.AutoSeller.CaravanEquip</li>
+  </loadAfter>
+</ModMetaData>
